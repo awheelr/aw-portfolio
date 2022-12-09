@@ -135,16 +135,33 @@ svg:hover {
 
 /* COMPATABILITY */
 @media (max-width: 1250px) {
-    .items {
-        display: grid;
-        grid-template-columns: 1fr
+    main {
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+    }
+
+    section.navbar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        margin-top: 2em;
+        padding: 15px 50px
     }
     
+
     section.profile h2 {
+        width: 50%;
         padding: 2rem;
         font-size: 18px;
         font-weight: 300;
         opacity: 75%;
+    }
+
+    .items {
+        display: grid;
+        grid-template-columns: 1fr
     }
     
 }
